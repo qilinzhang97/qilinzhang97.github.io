@@ -115,3 +115,4 @@ figure { max-width: 820px; }
   .hero { grid-template-columns: 1fr; gap: 24px; }
   h1 { font-size: 38px; }
 }
+.market { max-width: none; }
