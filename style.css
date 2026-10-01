@@ -142,3 +142,4 @@ details.abstract p { margin: 0 0 12px; }
 .with-fig { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 340px); column-gap: 48px; align-items: start; }
 .with-fig > figure { margin: 4px 0 0; max-width: none; }
 @media (max-width: 760px) { .with-fig { display: block; } }
+.hero img { aspect-ratio: 1 / 1; object-fit: cover; }
