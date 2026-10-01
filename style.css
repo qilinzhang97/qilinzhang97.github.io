@@ -127,3 +127,18 @@ figure { max-width: 1000px; }
   .paper.with-fig { display: block; }
   .paper.with-fig > figure { margin: 18px 0 8px; }
 }
+
+/* collapsible abstracts */
+details.abstract { margin: 4px 0 0; }
+details.abstract summary {
+  cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--sans); font-size: 15px; color: var(--accent);
+}
+details.abstract summary::-webkit-details-marker { display: none; }
+details.abstract summary::before { content: "▸"; font-size: 12px; transition: transform .15s; }
+details.abstract[open] summary::before { transform: rotate(90deg); }
+details.abstract[open] summary { margin-bottom: 10px; }
+details.abstract p { margin: 0 0 12px; }
+.with-fig { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 340px); column-gap: 48px; align-items: start; }
+.with-fig > figure { margin: 4px 0 0; max-width: none; }
+@media (max-width: 760px) { .with-fig { display: block; } }
