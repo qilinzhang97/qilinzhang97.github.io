@@ -118,3 +118,12 @@ figure { max-width: 1000px; }
 .market { max-width: none; }
 .gallery { grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 900px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+
+/* research: text on the left two-thirds, figure on the right third */
+.paper.with-fig { display: grid; grid-template-columns: 2fr 1fr; column-gap: 48px; align-items: start; align-content: start; }
+.paper.with-fig > :not(figure) { grid-column: 1; }
+.paper.with-fig > figure { grid-column: 2; grid-row: 1 / span 6; margin: 4px 0 0; max-width: none; }
+@media (max-width: 760px) {
+  .paper.with-fig { display: block; }
+  .paper.with-fig > figure { margin: 18px 0 8px; }
+}
