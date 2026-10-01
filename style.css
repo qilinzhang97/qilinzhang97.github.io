@@ -29,7 +29,7 @@ body {
   font-size: 19px;
   line-height: 1.65;
 }
-.wrap { max-width: 1320px; margin: 0 auto; padding: 0 5vw; }
+.wrap { max-width: 1680px; margin: 0 auto; padding: 0 4vw; }
 
 a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
 a:hover { border-bottom-color: currentColor; }
@@ -45,7 +45,7 @@ nav a[aria-current="page"] { color: var(--text); border-bottom: 2px solid var(--
 main { padding: 64px 0 40px; }
 
 /* hero */
-.hero { display: grid; grid-template-columns: 1fr 360px; gap: 72px; align-items: center; }
+.hero { display: grid; grid-template-columns: 1fr 400px; gap: 80px; align-items: center; }
 .hero img { width: 100%; border-radius: 3px; display: block; }
 h1 { font-weight: 400; font-size: 60px; line-height: 1.1; margin: 0 0 16px; letter-spacing: -.01em; }
 .lede { font-size: 22px; margin: 0 0 14px; }
@@ -105,7 +105,7 @@ footer { border-top: 1px solid var(--rule); margin-top: 40px; padding: 20px 0 40
 /* keep long-form text at a readable line length inside the wider page */
 main p, .paper, ul.list, dl.facts { max-width: none; }
 .hero p.lede { max-width: none; }
-figure { max-width: 900px; }
+figure { max-width: 1000px; }
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr 240px; gap: 36px; }
   h1 { font-size: 44px; }
