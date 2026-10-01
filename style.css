@@ -153,3 +153,28 @@ details.abstract p { margin: 0 0 12px; }
   color: var(--accent);
 }
 .tag.tool { border-color: transparent; background: color-mix(in srgb, var(--accent-2) 10%, transparent); color: var(--accent-2); }
+
+/* ---- smaller type scale (closer to a compact academic site) ---- */
+body { font-size: 16px; line-height: 1.6; }
+h1 { font-size: 40px; margin-bottom: 12px; }
+.lede { font-size: 17.5px; }
+h2 { font-size: 12.5px; margin: 40px 0 12px; }
+h3 { font-size: 17.5px; }
+.brand, nav ul { font-size: 14px; }
+.links, .sub, dl.facts dt, .paper .meta, ul.list .when, details.abstract summary { font-size: 13.5px; }
+.market { font-size: 14.5px; }
+figcaption, footer, .gallery figcaption { font-size: 13px; }
+.tag { font-size: 12px; padding: 4px 8px 3px; }
+.paper { margin-bottom: 30px; }
+main { padding: 48px 0 32px; }
+.hero { grid-template-columns: 1fr 280px; gap: 56px; }
+@media (max-width: 900px) {
+  h1 { font-size: 34px; }
+  .hero { grid-template-columns: 1fr 220px; gap: 32px; }
+}
+@media (max-width: 640px) {
+  body { font-size: 15.5px; }
+  h1 { font-size: 30px; }
+  .hero { grid-template-columns: 1fr; gap: 20px; }
+  .hero img { max-width: 200px; }
+}
