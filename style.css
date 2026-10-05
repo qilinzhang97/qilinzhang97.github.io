@@ -183,3 +183,6 @@ main { padding: 48px 0 32px; }
 ul.list.wip li { align-items: baseline; }
 ul.list.wip .tags { margin: 0; justify-content: flex-end; flex-shrink: 0; }
 @media (max-width: 640px) { ul.list.wip .tags { justify-content: flex-start; margin-top: 4px; } }
+
+/* statement link under page titles */
+h1 + .links { margin-top: 0; }
