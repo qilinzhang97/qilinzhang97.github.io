@@ -217,7 +217,13 @@ dl.facts.home-facts { margin-top: 40px; padding-top: 20px; border-top: 1px solid
   .hero.home img { max-width: 200px; order: 0; }
 }
 
-/* teaching evaluations: student comments */
-details.evals { margin-top: 14px; }
+/* teaching: course with syllabus, evaluation scores and student comments */
+ul.list.course > li { display: block; }
+ul.list.course .row { display: flex; justify-content: space-between; gap: 16px; }
+@media (max-width: 640px) { ul.list.course .row { flex-direction: column; gap: 0; } }
+ul.list.course a.doc { font-family: var(--sans); font-size: 13.5px; margin-left: 8px; }
+ul.evals { list-style: none; padding: 0; margin: 8px 0 4px; font-size: 15px; color: var(--muted); }
+ul.list.course ul.evals li { display: block; padding: 2px 0; border: 0; }
+ul.evals .score { font-family: var(--sans); font-size: 13.5px; color: var(--text); margin-left: 6px; white-space: nowrap; }
 ul.quotes { list-style: none; padding: 0; margin: 0; }
-ul.quotes li { font-style: italic; color: var(--muted); border-left: 2px solid var(--rule); padding: 2px 0 2px 14px; margin: 0 0 12px; }
+ul.list.course ul.quotes li { display: block; font-style: italic; color: var(--muted); border: 0; border-left: 2px solid var(--rule); padding: 2px 0 2px 14px; margin: 0 0 12px; }
