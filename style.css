@@ -216,3 +216,8 @@ dl.facts.home-facts { margin-top: 40px; padding-top: 20px; border-top: 1px solid
   .hero.home { grid-template-columns: 1fr; gap: 20px; }
   .hero.home img { max-width: 200px; order: 0; }
 }
+
+/* teaching evaluations: student comments */
+details.evals { margin-top: 14px; }
+ul.quotes { list-style: none; padding: 0; margin: 0; }
+ul.quotes li { font-style: italic; color: var(--muted); border-left: 2px solid var(--rule); padding: 2px 0 2px 14px; margin: 0 0 12px; }
